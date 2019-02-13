@@ -5,10 +5,7 @@
 def who_do_you_know():
     people = input("Please provide a list of the people that you know separated by commas: ")
     people_list = people.split(',')
-
-    people_without_spaces = []
-    for person in people_list:
-        people_without_spaces.append(person.strip())
+    people_without_spaces = [person.strip() for person in people_list]
     return people_without_spaces
 
 # Ask user for a name 
