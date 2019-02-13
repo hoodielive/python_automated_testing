@@ -15,11 +15,11 @@ class Store:
             total += item['price']
        return total 
 
-   @classmethod
-   def franchise(cls, store):
+    @classmethod
+    def franchise(cls, store):
        return cls(store.name + " - franchise")
 
-   @staticmethod
-   def store_details(store):
+    @staticmethod
+    def store_details(store):
        return '{}, total stock price: {}'.format(store.name, int(store.stock_price()))
 
