@@ -25,11 +25,11 @@ class BlogTest(TestCase):
             'title': 'Test',
             'author': 'Test Author',
             'posts': [
-                    {
-                       'title': 'Test Post',
-                       'content': 'Test Content'
-                    }
-                 ]
-            }
+                        {
+                           'title': 'Test Post',
+                           'content': 'Test Content'
+                        }
+                     ]
+                }
 
         self.assertDictEqual(expected, b.json())
